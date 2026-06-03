@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine — Tânia Decorações</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary:    #9B1515;
+      --primary-d:  #6D0A0A;
+      --primary-l:  #C9A55A;
+      --text:       #1A0808;
+      --text-soft:  #4A1515;
+      --border:     rgba(155,21,21,0.22);
+      --white:      #FFFFFF;
+      --header-h:   80px;
+      --badge-h:    63px;
+      --trans:      .3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Lato', sans-serif;
+      background: #f5f0eb;
+    }
+
+    /* ── HEADER ── */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--header-h);
+      z-index: 1000;
+      background: rgba(20,3,3,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(155,21,21,0.25);
+      display: flex;
+      align-items: center;
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .header-logo img {
+      height: 60px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: .88rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.82);
+      text-decoration: none;
+      letter-spacing: .03em;
+      transition: color var(--trans);
+    }
+    .nav-links a:hover { color: var(--primary-l); }
+
+    .nav-links a.nav-vitrine-ativo {
+      color: var(--primary-l);
+      position: relative;
+    }
+    .nav-links a.nav-vitrine-ativo::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0; right: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--primary-l);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 9px 20px;
+      border-radius: 99px;
+      font-size: .86rem !important;
+      transition: background var(--trans), transform var(--trans) !important;
+    }
+    .nav-cta:hover {
+      background: var(--primary-d) !important;
+      transform: translateY(-1px);
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      width: 24px;
+      height: 2px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 2px;
+      transition: transform var(--trans), opacity var(--trans);
+    }
+
+    #navMobile {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: var(--header-h);
+      left: 0; right: 0;
+      background: rgba(15,2,2,0.99);
+      border-bottom: 1px solid rgba(155,21,21,0.2);
+      padding: 8px 0 16px;
+      z-index: 999;
+    }
+    #navMobile.aberto { display: flex; }
+    #navMobile a {
+      padding: 12px 24px;
+      font-size: .95rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(155,21,21,0.12);
+      transition: color var(--trans), background var(--trans);
+    }
+    #navMobile a:last-child { border-bottom: none; }
+    #navMobile a:hover { color: var(--primary-l); background: rgba(155,21,21,0.08); }
+
+    /* ── IFRAME ── */
+    #vitrine-frame {
+      position: fixed;
+      top: var(--header-h);
+      left: 0;
+      right: 0;
+      width: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* ── BADGE INFERIOR ── */
+    #vitrine-badge {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      height: var(--badge-h);
+      background: rgba(20,3,3,0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(155,21,21,0.22);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      gap: 16px;
+      z-index: 1000;
+    }
+
+    .badge-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.7);
+      font-size: .8rem;
+    }
+
+    .badge-info svg { color: var(--primary-l); flex-shrink: 0; }
+
+    .badge-info strong {
+      color: rgba(255,255,255,0.95);
+      font-size: .85rem;
+    }
+
+    .badge-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Lato', sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 7px 16px;
+      border-radius: 99px;
+      transition: background var(--trans), color var(--trans), transform var(--trans);
+    }
+
+    .badge-btn-outline {
+      color: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.22);
+    }
+    .badge-btn-outline:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    .badge-btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .badge-btn-primary:hover {
+      background: var(--primary-d);
+      transform: translateY(-1px);
+    }
+
+    /* ── RESPONSIVO ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .badge-info span:not(.badge-info strong) { display: none; }
+    }
+
+    @media (max-width: 560px) {
+      .header-inner { padding: 0 16px; }
+      .header-logo img { height: 48px; }
+      #vitrine-badge { padding: 0 16px; }
+      .badge-btn { font-size: .75rem; padding: 6px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo" aria-label="Tânia Decorações — voltar ao site">
+      <img src="images/logo.png" alt="Logo Tânia Decorações">
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#produtos">Produtos</a></li>
+        <li><a href="index.html#diferenciais">Diferenciais</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="vitrine.html" class="nav-vitrine-ativo">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-1px;margin-right:4px"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          Vitrine
+        </a></li>
+        <li><a href="https://wa.me/5551984783430" target="_blank" rel="noopener" class="nav-cta">WhatsApp</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav id="navMobile" aria-label="Menu mobile">
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#produtos">Produtos</a>
+    <a href="index.html#diferenciais">Diferenciais</a>
+    <a href="index.html#contato">Contato</a>
+    <a href="vitrine.html" style="color:var(--primary-l)">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-1px;margin-right:4px"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      Vitrine
+    </a>
+    <a href="https://wa.me/5551984783430" target="_blank" rel="noopener" style="color:#22C55E;font-weight:700;">WhatsApp</a>
+  </nav>
+</header>
+
+<!-- ===== IFRAME DA VITRINE ===== -->
+<iframe
+  id="vitrine-frame"
+  src="https://taniadecoracoesltda.egestor.com.br/vitrine/"
+  title="Vitrine Tânia Decorações"
+  allowfullscreen
+  loading="eager">
+</iframe>
+
+<!-- ===== BADGE INFERIOR ===== -->
+<div id="vitrine-badge" role="contentinfo">
+  <div class="badge-info">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+    <div>
+      <strong>Vitrine Tânia Decorações</strong>
+      <span> · Rodaforros, Rodapés e Boiseries</span>
+    </div>
+  </div>
+  <div class="badge-actions">
+    <a href="index.html" class="badge-btn badge-btn-outline">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Voltar ao site
+    </a>
+    <a href="https://wa.me/5551984783430" target="_blank" rel="noopener" class="badge-btn badge-btn-primary">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Fazer pedido
+    </a>
+  </div>
+</div>
+
+<script>
+  const HEADER_H = 80;
+  const BADGE_H  = 63;
+  const frame    = document.getElementById('vitrine-frame');
+
+  function ajustarFrame() {
+    const h = window.innerHeight - HEADER_H - BADGE_H;
+    frame.style.height = h + 'px';
+  }
+
+  ajustarFrame();
+  window.addEventListener('resize', ajustarFrame);
+
+  /* ── Menu mobile ── */
+  const toggle    = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  let aberto = false;
+
+  toggle.addEventListener('click', () => {
+    aberto = !aberto;
+    navMobile.classList.toggle('aberto', aberto);
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

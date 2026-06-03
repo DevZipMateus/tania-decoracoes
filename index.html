@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tânia Decorações</title>
+  <meta name="description" content="Tânia Decorações — especialista em rodaforros, rodapés e boiseries em Porto Alegre desde 1980. Empresa familiar com 46 anos de tradição e qualidade em materiais de decoração de interiores.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tânia Decorações">
+  <meta property="og:description" content="Especialista em rodaforros, rodapés e boiseries em Porto Alegre desde 1980. 46 anos de tradição e qualidade.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Tânia Decorações",
+    "description": "Especialista em rodaforros, rodapés e boiseries em Porto Alegre desde 1980. Empresa familiar com 46 anos de tradição em materiais de decoração de interiores.",
+    "url": "https://www.instagram.com/taniadecoracoes_",
+    "telephone": "+55-51-98478-3430",
+    "email": "taniadecfinanceiro@gmail.com",
+    "foundingDate": "1980",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Cristóvão Colombo, 1400",
+      "addressLocality": "Porto Alegre",
+      "addressRegion": "RS",
+      "addressCountry": "BR",
+      "postalCode": "90550-002"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-30.0277",
+      "longitude": "-51.2087"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/taniadecoracoes_"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── VARIÁVEIS ─────────────────────────────────── */
+    :root {
+      --creme:       #FAF7F4;
+      --creme2:      #F2EDEC;
+      --creme3:      #EAE0DF;
+      --primary:     #9B1515;
+      --primary-d:   #6D0A0A;
+      --primary-l:   #C9A55A;
+      --accent:      #7A1010;
+      --text:        #1A0808;
+      --text-soft:   #4A1515;
+      --white:       #FFFFFF;
+      --border:      rgba(155,21,21,0.18);
+      --border2:     rgba(155,21,21,0.36);
+      --radius:      12px;
+      --radius-lg:   20px;
+      --trans:       .3s ease;
+      --shadow:      0 4px 24px rgba(109,10,10,0.10);
+      --shadow-lg:   0 12px 48px rgba(109,10,10,0.18);
+    }
+
+    /* ── RESET ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--creme);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── TIPOGRAFIA ────────────────────────────────── */
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.25; }
+
+    .section-tag {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      border: 1px solid var(--border2);
+      background: rgba(155,21,21,0.08);
+      padding: 4px 14px;
+      border-radius: 99px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .section-title em {
+      font-style: italic;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--primary-l) 50%, var(--primary) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradShimmer 4s linear infinite;
+    }
+    #diferenciais .section-title em {
+      background: linear-gradient(90deg, rgba(255,255,255,.7) 0%, #fff 50%, rgba(255,255,255,.7) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    @keyframes gradShimmer {
+      0%   { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-soft);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    /* ── UTILITÁRIOS ───────────────────────────────── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 96px 0; }
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-header .section-desc { margin: 0 auto; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: var(--white);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 14px 32px;
+      border-radius: 99px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: background var(--trans), transform var(--trans), box-shadow var(--trans);
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -80%;
+      width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.3), transparent);
+      transform: skewX(-20deg);
+      animation: btnShimmer 3.5s ease 1s infinite;
+      pointer-events: none;
+    }
+    @keyframes btnShimmer {
+      0%   { left: -80%; }
+      50%, 100% { left: 150%; }
+    }
+    .btn-primary:hover {
+      background: var(--primary-d);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(155,21,21,0.35);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--primary);
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 13px 30px;
+      border-radius: 99px;
+      text-decoration: none;
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: background var(--trans), color var(--trans), transform var(--trans);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ── ORNAMENTO ─────────────────────────────────── */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0 0;
+    }
+    .ornament span {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--primary));
+    }
+    .ornament span:last-child {
+      background: linear-gradient(90deg, var(--primary), transparent);
+    }
+    .ornament svg { color: var(--primary); flex-shrink: 0; }
+
+    /* ── REVEAL ────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      filter: blur(3px);
+      transition: opacity .7s ease, transform .7s ease, filter .7s ease;
+    }
+    .reveal.visivel {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+
+    /* ── BARRA DE PROGRESSO ─────────────────────────── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary-l), var(--primary), var(--accent));
+      z-index: 1002;
+      pointer-events: none;
+      transition: width .1s linear;
+    }
+
+    /* ── PARTÍCULAS HERO ────────────────────────────── */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .ptc {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--primary);
+      animation: ptcFloat linear infinite;
+      opacity: 0;
+    }
+    @keyframes ptcFloat {
+      0%   { opacity: 0;    transform: translateY(0)      scale(.4); }
+      15%  { opacity: .30; }
+      80%  { opacity: .10; }
+      100% { opacity: 0;    transform: translateY(-200px) scale(1.2); }
+    }
+
+    /* ── PARALLAX SECTIONS ──────────────────────────── */
+    #sobre      { background-attachment: scroll, fixed; }
+    #produtos   { background-attachment: scroll, fixed; }
+    #diferenciais { background-attachment: scroll, fixed; }
+    #contato    { background-attachment: scroll, fixed; }
+
+    /* ── ORNAMENT DRAW ──────────────────────────────── */
+    .ornament span {
+      width: 0 !important;
+      transition: width .9s ease .2s !important;
+    }
+    .ornament.visivel span { width: 60px !important; }
+
+    /* ── CONTADOR ANIMADO ───────────────────────────── */
+    .hero-stat-num[data-target],
+    .sobre-mini-card .num[data-target] {
+      transition: color .3s;
+    }
+
+    /* ── HEADER ────────────────────────────────────── */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #a80b0e;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(155,21,21,0.2);
+      transition: box-shadow var(--trans);
+    }
+    #header.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .header-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: .9rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      letter-spacing: .03em;
+      transition: color var(--trans);
+    }
+    .nav-links a:hover { color: var(--primary-l); }
+
+    .nav-cta {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 9px 22px;
+      border-radius: 99px;
+      font-size: .88rem !important;
+      transition: background var(--trans), transform var(--trans) !important;
+    }
+    .nav-cta:hover {
+      background: var(--primary-d) !important;
+      transform: translateY(-1px);
+      color: var(--white) !important;
+    }
+
+    /* Hamburguer */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      width: 24px;
+      height: 2px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 2px;
+      transition: transform var(--trans), opacity var(--trans);
+    }
+
+    #navMobile {
+      display: none;
+      flex-direction: column;
+      background: #8a0a0c;
+      border-top: 1px solid rgba(155,21,21,0.2);
+      padding: 8px 0 16px;
+    }
+    #navMobile a {
+      padding: 12px 24px;
+      font-size: .95rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(155,21,21,0.15);
+      transition: color var(--trans), background var(--trans);
+    }
+    #navMobile a:last-child { border-bottom: none; }
+    #navMobile a:hover { color: var(--primary-l); background: rgba(155,21,21,0.08); }
+
+    /* ── HERO ──────────────────────────────────────── */
+    #hero {
+      padding-top: 72px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(160deg, rgba(250,247,244,0.92) 0%, rgba(234,226,218,0.88) 100%),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(155,21,21,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(155,21,21,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: rgba(155,21,21,0.1);
+      border: 1px solid var(--border2);
+      padding: 6px 16px;
+      border-radius: 99px;
+      margin-bottom: 24px;
+    }
+
+    .hero-inner h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 400;
+      color: #a80b0e;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .hero-inner h1 em {
+      font-style: italic;
+      color: var(--primary);
+    }
+
+    .hero-inner h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      font-weight: 400;
+      color: var(--text-soft);
+      margin-bottom: 36px;
+      line-height: 1.8;
+      max-width: 480px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: .82rem;
+      color: var(--text-soft);
+      margin-top: 4px;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-logo-wrap {
+      background: #a80b0e;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 56px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      border: 1px solid rgba(155,21,21,0.2);
+      position: relative;
+    }
+
+    .hero-logo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: calc(var(--radius-lg) + 1px);
+      background: linear-gradient(135deg, var(--primary-l), transparent 60%);
+      opacity: .25;
+      pointer-events: none;
+    }
+
+    .hero-logo-wrap img {
+      width: 220px;
+      height: auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--primary-l);
+      background: rgba(155,21,21,0.15);
+      border: 1px solid rgba(155,21,21,0.3);
+      padding: 5px 14px;
+      border-radius: 99px;
+    }
+
+    /* ── SOBRE ─────────────────────────────────────── */
+    #sobre {
+      background:
+        linear-gradient(rgba(255,255,255,0.91), rgba(255,255,255,0.91)),
+        url('https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .sobre-texto h2 { margin-bottom: 16px; }
+
+    .sobre-texto p {
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+
+    .sobre-valores {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .valor-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .valor-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(155,21,21,0.1);
+      border: 1px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .valor-nome {
+      font-weight: 700;
+      font-size: .9rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .valor-desc {
+      font-size: .82rem;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    .sobre-visual {
+      position: relative;
+    }
+
+    .sobre-card-principal {
+      background: linear-gradient(135deg, var(--primary), var(--primary-d));
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sobre-card-principal::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .sobre-card-principal .ano {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 1;
+      opacity: .25;
+      margin-bottom: -16px;
+    }
+
+    .sobre-card-principal .titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .sobre-card-principal p {
+      font-size: .9rem;
+      opacity: .9;
+      line-height: 1.7;
+    }
+
+    .sobre-cards-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .sobre-mini-card {
+      background: var(--creme);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sobre-mini-card .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .sobre-mini-card .label {
+      font-size: .78rem;
+      color: var(--text-soft);
+      margin-top: 4px;
+    }
+
+    /* ── PRODUTOS ──────────────────────────────────── */
+    #produtos {
+      background:
+        linear-gradient(rgba(250,247,244,0.93), rgba(250,247,244,0.93)),
+        url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+    }
+
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .produto-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      text-align: center;
+      transition: border-color var(--trans), transform var(--trans), box-shadow var(--trans);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .produto-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(155,21,21,0.06) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity var(--trans);
+      pointer-events: none;
+    }
+
+    .produto-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .produto-card:hover::after { opacity: 1; }
+
+    .produto-icon-wrap {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(155,21,21,0.1);
+      border: 2px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      color: var(--primary);
+      font-size: 1.8rem;
+      transition: background var(--trans), border-color var(--trans);
+    }
+
+    .produto-card:hover .produto-icon-wrap {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--white);
+    }
+
+    .produto-nome {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .produto-desc {
+      font-size: .88rem;
+      color: var(--text-soft);
+      line-height: 1.75;
+    }
+
+    .produto-tag {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: rgba(155,21,21,0.1);
+      border: 1px solid var(--border2);
+      padding: 4px 12px;
+      border-radius: 99px;
+    }
+
+    /* ── DIFERENCIAIS ──────────────────────────────── */
+    #diferenciais {
+      background:
+        linear-gradient(135deg, rgba(120,10,10,0.94) 0%, rgba(60,3,3,0.96) 100%),
+        url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+      padding: 80px 0;
+    }
+
+    #diferenciais .section-tag {
+      color: rgba(255,255,255,0.97);
+      border-color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.15);
+    }
+
+    #diferenciais .section-title { color: var(--white); }
+    #diferenciais .section-title em { color: rgba(255,255,255,0.92); font-style: italic; }
+    #diferenciais .section-desc { color: rgba(255,255,255,0.95); }
+
+    .diferenciais-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .diferencial-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      transition: background var(--trans), transform var(--trans);
+    }
+
+    .diferencial-card:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-4px);
+    }
+
+    .diferencial-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .diferencial-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .diferencial-desc {
+      font-size: .83rem;
+      color: rgba(255,255,255,0.95);
+      line-height: 1.6;
+    }
+
+    /* ── CONTATO ───────────────────────────────────── */
+    #contato {
+      background:
+        linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
+        url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+    }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contato-info { display: flex; flex-direction: column; gap: 20px; }
+
+    .contato-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--creme);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: border-color var(--trans);
+    }
+
+    .contato-card:hover { border-color: var(--border2); }
+
+    .contato-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(155,21,21,0.1);
+      border: 1px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contato-card-titulo {
+      font-weight: 700;
+      font-size: .85rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .contato-card-valor {
+      font-size: .9rem;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    .contato-card-valor a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      transition: color var(--trans);
+    }
+
+    .contato-card-valor a:hover { color: var(--primary-d); }
+
+    .contato-mapa {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .contato-mapa iframe {
+      width: 100%;
+      height: 400px;
+      display: block;
+      border: none;
+    }
+
+    /* ── FOOTER ────────────────────────────────────── */
+    footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.9);
+      padding: 48px 0 24px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 24px;
+    }
+
+    .footer-logo img {
+      height: 52px;
+      width: auto;
+      margin-bottom: 14px;
+      filter: brightness(0) invert(1);
+      opacity: .85;
+    }
+
+    .footer-desc {
+      font-size: .85rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      font-size: .9rem;
+      transition: background var(--trans), color var(--trans);
+    }
+
+    .footer-social a:hover { background: var(--primary); color: var(--white); border-color: var(--primary); }
+
+    .footer-col h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-col ul a {
+      font-size: .85rem;
+      color: rgba(255,255,255,0.88);
+      text-decoration: none;
+      transition: color var(--trans);
+    }
+
+    .footer-col ul a:hover { color: var(--primary-l); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .78rem;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ── WHATSAPP FLUTUANTE ─────────────────────────── */
+    #wpp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 990;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #22C55E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(34,197,94,0.4);
+      text-decoration: none;
+      transition: background var(--trans), box-shadow var(--trans), transform var(--trans);
+    }
+    #wpp-float:hover {
+      background: #16a34a;
+      box-shadow: 0 6px 28px rgba(34,197,94,0.5);
+      transform: translateY(-2px);
+    }
+    #wpp-float svg { color: #fff; }
+
+    /* ── SOBRE FOTO ────────────────────────────────── */
+    .sobre-foto-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .sobre-foto-wrap img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+    .sobre-foto-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(20,3,3,0.92);
+      border: 1px solid rgba(155,21,21,0.3);
+      border-radius: var(--radius);
+      padding: 10px 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sobre-foto-badge-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-l);
+      line-height: 1.2;
+    }
+    .sobre-foto-badge-label {
+      font-size: .75rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 2px;
+    }
+
+    /* ── GALERIA ────────────────────────────────────── */
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .galeria-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+    .galeria-item img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s ease;
+    }
+    .galeria-item:hover img { transform: scale(1.04); }
+    .galeria-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,3,3,0.75) 0%, transparent 50%);
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity var(--trans);
+    }
+    .galeria-item:hover .galeria-overlay { opacity: 1; }
+    .galeria-overlay span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* ── NAV ATIVO ─────────────────────────────────── */
+    .nav-links a.nav-ativo {
+      color: var(--primary-l) !important;
+      position: relative;
+    }
+    .nav-links a.nav-ativo::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--primary-l);
+    }
+
+    /* ── BANNER VITRINE ────────────────────────────── */
+    .vitrine-banner {
+      margin-top: 52px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #9B1515 0%, #4A0808 100%);
+      padding: 52px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vitrine-banner::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .vitrine-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: 30%;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .vitrine-banner-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .vitrine-banner-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 18px;
+    }
+
+    .vitrine-banner h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .vitrine-banner p {
+      font-size: .95rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+      max-width: 480px;
+    }
+
+    .vitrine-banner-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-l);
+      color: #1A0808;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 15px 32px;
+      border-radius: 99px;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      transition: transform var(--trans), box-shadow var(--trans);
+    }
+
+    .vitrine-banner-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    }
+
+    @media (max-width: 768px) {
+      .vitrine-banner {
+        flex-direction: column;
+        padding: 40px 28px;
+        text-align: center;
+      }
+      .vitrine-banner p { margin: 0 auto; }
+    }
+
+    /* ── COMO FUNCIONA ─────────────────────────────── */
+    #como-funciona {
+      background: var(--creme2);
+    }
+
+    .como-funciona-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 56px;
+      position: relative;
+    }
+
+    .como-funciona-grid::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: calc(16.666% + 20px);
+      right: calc(16.666% + 20px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-l), var(--primary));
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .passo {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .passo-circulo {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      box-shadow: var(--shadow);
+      transition: border-color var(--trans), background var(--trans), box-shadow var(--trans);
+    }
+
+    .passo-circulo svg {
+      color: var(--primary);
+      transition: color var(--trans);
+    }
+
+    .passo:hover .passo-circulo {
+      background: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 8px 32px rgba(155,21,21,0.28);
+    }
+
+    .passo:hover .passo-circulo svg { color: var(--white); }
+
+    .passo-num-badge {
+      position: absolute;
+      top: -6px;
+      right: calc(50% - 52px);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-size: .72rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--creme2);
+    }
+
+    .passo h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .passo p {
+      font-size: .9rem;
+      color: var(--text-soft);
+      line-height: 1.75;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    /* ── FAQ ────────────────────────────────────────── */
+    #faq { background: var(--creme); }
+
+    .faq-list {
+      max-width: 780px;
+      margin: 56px auto 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 10px;
+      overflow: hidden;
+      background: var(--white);
+      transition: border-color var(--trans), box-shadow var(--trans);
+    }
+
+    .faq-item.ativo {
+      border-color: var(--border2);
+      box-shadow: var(--shadow);
+    }
+
+    .faq-pergunta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      cursor: pointer;
+      gap: 16px;
+      list-style: none;
+      user-select: none;
+    }
+
+    .faq-pergunta h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .faq-icone {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border-radius: 50%;
+      background: rgba(155,21,21,0.08);
+      border: 1px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.3rem;
+      line-height: 1;
+      transition: background var(--trans), transform var(--trans), color var(--trans);
+    }
+
+    .faq-item.ativo .faq-icone {
+      background: var(--primary);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+
+    .faq-resposta {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .38s ease;
+    }
+
+    .faq-resposta-inner {
+      padding: 4px 24px 22px;
+      font-size: .92rem;
+      color: var(--text-soft);
+      line-height: 1.85;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── RESPONSIVO ────────────────────────────────── */
+
+    /* Tablet landscape — até 1024px */
+    @media (max-width: 1024px) {
+      .diferenciais-grid  { grid-template-columns: repeat(2, 1fr); }
+      .hero-inner         { gap: 40px; }
+      .sobre-grid         { gap: 40px; }
+    }
+
+    /* Tablet landscape — como funciona */
+    @media (max-width: 1024px) {
+      .como-funciona-grid::before { display: none; }
+    }
+
+    /* Tablet portrait — até 900px */
+    @media (max-width: 900px) {
+      /* Nav */
+      .nav-links  { display: none; }
+      .nav-toggle { display: flex; }
+
+      /* Header logo levemente menor */
+      .header-logo img { height: 52px; }
+
+      /* Hero */
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 36px;
+      }
+      .hero-inner h2      { margin: 0 auto 28px; }
+      .hero-btns          { justify-content: center; }
+      .hero-stats         { justify-content: center; flex-wrap: wrap; gap: 24px; }
+      .hero-visual        { order: -1; }
+      .hero-logo-wrap     { padding: 36px 32px; }
+      .hero-logo-wrap img { width: 160px; }
+
+      /* Grids */
+      .sobre-grid         { grid-template-columns: 1fr; gap: 32px; }
+      .produtos-grid      { grid-template-columns: repeat(2, 1fr); }
+      .como-funciona-grid { grid-template-columns: 1fr; gap: 24px; }
+      .galeria-grid       { grid-template-columns: 1fr; }
+      .galeria-item img   { height: 280px; }
+      .diferenciais-grid  { grid-template-columns: repeat(2, 1fr); }
+      .contato-grid       { grid-template-columns: 1fr; }
+
+      /* Footer */
+      .footer-inner       { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-inner > div:first-child { grid-column: 1 / -1; }
+
+      /* Mapa */
+      .contato-mapa iframe { height: 320px; }
+
+      /* iOS: desabilita parallax que não funciona corretamente */
+      #sobre, #produtos, #diferenciais, #contato {
+        background-attachment: scroll, scroll;
+      }
+    }
+
+    /* Telefone landscape / tablet pequeno — até 640px */
+    @media (max-width: 640px) {
+      /* Espaçamentos */
+      .section          { padding: 56px 0; }
+      #diferenciais     { padding: 56px 0; }
+      #galeria          { padding: 0 0 56px !important; }
+      .section-header   { margin-bottom: 40px; }
+      .container        { padding: 0 18px; }
+
+      /* Hero */
+      .hero-inner       { gap: 28px; }
+      .hero-logo-wrap   { padding: 28px 24px; }
+      .hero-logo-wrap img { width: 140px; }
+      .hero-stats       { gap: 16px; }
+      .hero-stat-num    { font-size: 1.6rem; }
+      .hero-btns        { flex-direction: column; align-items: center; gap: 10px; }
+      .hero-btns a      { width: 100%; max-width: 280px; justify-content: center; }
+
+      /* Sobre */
+      .sobre-valores    { grid-template-columns: 1fr; gap: 12px; }
+      .sobre-cards-row  { grid-template-columns: 1fr 1fr; }
+
+      /* Produtos */
+      .produtos-grid    { grid-template-columns: 1fr; }
+      .produto-card     { padding: 28px 20px; }
+
+      /* Galeria */
+      .galeria-item img { height: 240px; }
+
+      /* Diferenciais */
+      .diferenciais-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .diferencial-card  { padding: 24px 16px; }
+
+      /* Contato */
+      .contato-mapa iframe { height: 280px; }
+
+      /* Footer */
+      .footer-inner     { grid-template-columns: 1fr; gap: 24px; }
+      .footer-bottom    { flex-direction: column; text-align: center; gap: 6px; }
+
+      /* WhatsApp float menor */
+      #wpp-float        { width: 48px; height: 48px; bottom: 20px; right: 20px; }
+
+      /* Barra progress não ocupa header no mobile */
+      #progress-bar     { top: 72px; }
+    }
+
+    /* Telefone portrait — até 480px */
+    @media (max-width: 480px) {
+      .section-title    { font-size: 1.6rem; }
+      .hero-logo-wrap img { width: 120px; }
+      .hero-stat-num    { font-size: 1.4rem; }
+
+      .sobre-mini-card  { padding: 14px; }
+      .sobre-mini-card .num { font-size: 1.5rem; }
+
+      .diferenciais-grid { grid-template-columns: 1fr; }
+
+      .contato-card     { padding: 14px; }
+      .contato-mapa iframe { height: 240px; }
+
+      .footer-logo img  { height: 42px; }
+      .footer-inner     { gap: 20px; }
+
+      /* Section tag menor */
+      .section-tag      { font-size: .7rem; padding: 3px 10px; }
+    }
+
+    /* Telefone pequeno — até 360px */
+    @media (max-width: 360px) {
+      .container        { padding: 0 14px; }
+      .section          { padding: 48px 0; }
+      .header-logo img  { height: 42px; }
+      .btn-primary,
+      .btn-outline      { font-size: .85rem; padding: 11px 20px; }
+      .hero-btns a      { max-width: 100%; }
+      .sobre-cards-row  { grid-template-columns: 1fr; }
+      .galeria-item img { height: 200px; }
+      .papeis-grid      { grid-template-columns: 1fr; }
+      .papeis-info-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── PAPÉIS DE PAREDE ──────────────────────────── */
+    #papeis-parede { background: var(--creme2); }
+
+    .papeis-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 48px;
+    }
+
+    .papeis-foto {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      cursor: zoom-in;
+    }
+
+    .papeis-foto img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s ease;
+    }
+
+    .papeis-foto:hover img { transform: scale(1.04); }
+
+    .papeis-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .papeis-texto h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .papeis-texto p {
+      color: var(--text-soft);
+      font-size: .97rem;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .papeis-badge-encomenda {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #a80b0e;
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 99px;
+      margin-top: 8px;
+    }
+
+    .papeis-colecoes {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      box-shadow: var(--shadow);
+      border-left: 3px solid #a80b0e;
+    }
+
+    .papeis-colecoes h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .papeis-colecoes ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .papeis-colecoes ul li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .88rem;
+      color: var(--text-soft);
+    }
+
+    .papeis-colecoes ul li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #a80b0e;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 900px) {
+      .papeis-grid      { grid-template-columns: 1fr 1fr; }
+      .papeis-info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header id="header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#hero" class="header-logo" aria-label="Tânia Decorações - início">
+        <img src="images/logo.png" alt="Logo Tânia Decorações">
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="vitrine.html">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-1px;margin-right:3px"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            Vitrine
+          </a></li>
+          <li><a href="https://wa.me/5551984783430" target="_blank" rel="noopener" class="nav-cta">WhatsApp</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="navMobile" aria-label="Menu mobile">
+      <a href="#sobre"         onclick="fecharMenu()">Sobre</a>
+      <a href="#produtos"      onclick="fecharMenu()">Produtos</a>
+      <a href="#diferenciais"  onclick="fecharMenu()">Diferenciais</a>
+      <a href="#contato"       onclick="fecharMenu()">Contato</a>
+      <a href="vitrine.html" style="color:var(--primary-l);font-weight:700;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-1px;margin-right:4px"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        Vitrine
+      </a>
+      <a href="https://wa.me/5551984783430" target="_blank" rel="noopener" style="color:#22C55E;font-weight:700;">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <span class="hero-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Desde 1980
+        </span>
+        <h1>Tânia<br><em>Decorações</em></h1>
+        <h2>Elegância e tradição em materiais de decoração de interiores. Há mais de 46 anos transformando ambientes com qualidade e sofisticação.</h2>
+        <div class="hero-btns">
+          <a href="#produtos" class="btn-primary">Ver produtos</a>
+          <a href="vitrine.html" class="btn-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-2px;margin-right:4px"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            Ver vitrine
+          </a>
+          <a href="https://wa.me/5551984783430" target="_blank" rel="noopener" class="btn-outline">Fale conosco</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num" data-target="46" data-suffix="+">46+</div>
+            <div class="hero-stat-label">Anos de mercado</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-target="1980" data-suffix="">1980</div>
+            <div class="hero-stat-label">Fundação</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-target="3" data-suffix="">3</div>
+            <div class="hero-stat-label">Linhas de produto</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" style="transition-delay:.15s">
+        <div class="hero-logo-wrap">
+          <img src="images/logo.png" alt="Tânia Decorações">
+          <div class="ornament reveal">
+            <span></span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span></span>
+          </div>
+          <span class="hero-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Empresa familiar de confiança
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+
+      <div class="sobre-texto reveal">
+        <span class="section-tag">Quem somos</span>
+        <h2 class="section-title">Uma história de <em>tradição e família</em></h2>
+        <p>A Tânia Decorações é uma empresa familiar fundada em dezembro de 1980, com mais de 46 anos de atuação no mercado de materiais de decoração de interiores em Porto Alegre.</p>
+        <p>Nossa missão é oferecer qualidade no atendimento e na entrega de nossos produtos, sempre prezando pela satisfação do cliente. Cada detalhe importa quando o assunto é transformar um espaço em lar.</p>
+
+        <div class="sobre-valores">
+          <div class="valor-item">
+            <div class="valor-icon">&#10003;</div>
+            <div>
+              <div class="valor-nome">Qualidade</div>
+              <div class="valor-desc">Produtos selecionados com alto padrão</div>
+            </div>
+          </div>
+          <div class="valor-item">
+            <div class="valor-icon">&#9825;</div>
+            <div>
+              <div class="valor-nome">Tradição</div>
+              <div class="valor-desc">46 anos de história familiar</div>
+            </div>
+          </div>
+          <div class="valor-item">
+            <div class="valor-icon">&#9733;</div>
+            <div>
+              <div class="valor-nome">Atendimento</div>
+              <div class="valor-desc">Foco total na satisfação do cliente</div>
+            </div>
+          </div>
+          <div class="valor-item">
+            <div class="valor-icon">&#8962;</div>
+            <div>
+              <div class="valor-nome">Expertise</div>
+              <div class="valor-desc">Especialistas em decoração de interiores</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-visual reveal" style="transition-delay:.15s">
+        <div class="sobre-foto-wrap">
+          <img src="images/midia_3.jpg" alt="Fachada da loja Tânia Decorações na Av. Cristóvão Colombo, Porto Alegre">
+          <div class="sobre-foto-badge">
+            <span class="sobre-foto-badge-num">Desde 1980</span>
+            <span class="sobre-foto-badge-label">Porto Alegre - RS</span>
+          </div>
+        </div>
+        <div class="sobre-cards-row" style="margin-top:16px">
+          <div class="sobre-mini-card">
+            <div class="num" data-target="46" data-suffix="+">46+</div>
+            <div class="label">Anos de experiência</div>
+          </div>
+          <div class="sobre-mini-card">
+            <div class="num" data-target="1400" data-suffix="">1400</div>
+            <div class="label">Av. Cristóvão Colombo</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUTOS ===== -->
+<section class="section" id="produtos">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nossos produtos</span>
+      <h2 class="section-title">Elegância em cada <em>detalhe</em></h2>
+      <p class="section-desc">Trabalhamos com as melhores linhas de acabamento para transformar qualquer ambiente com sofisticação e qualidade.</p>
+      <div class="ornament reveal">
+        <span></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="produtos-grid">
+
+      <div class="produto-card reveal">
+        <div class="produto-icon-wrap" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="2" y1="15" x2="22" y2="15"/></svg>
+        </div>
+        <h3 class="produto-nome">Rodaforros</h3>
+        <p class="produto-desc">Acabamento elegante para a parte superior das paredes, criando a transição perfeita entre parede e teto com sofisticação e leveza.</p>
+        <span class="produto-tag">Acabamento superior</span>
+      </div>
+
+      <div class="produto-card reveal" style="transition-delay:.1s">
+        <div class="produto-icon-wrap" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="19" x2="22" y2="19"/><line x1="2" y1="14" x2="22" y2="14"/></svg>
+        </div>
+        <h3 class="produto-nome">Rodapés</h3>
+        <p class="produto-desc">Proteção e estética para a base das paredes. Nossos rodapés unem funcionalidade e beleza, complementando qualquer estilo de decoração.</p>
+        <span class="produto-tag">Acabamento inferior</span>
+      </div>
+
+      <div class="produto-card reveal" style="transition-delay:.2s">
+        <div class="produto-icon-wrap" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><rect x="7" y="7" width="10" height="10" rx="1"/><line x1="3" y1="7" x2="7" y2="7"/><line x1="17" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="21" y2="17"/></svg>
+        </div>
+        <h3 class="produto-nome">Boiseries</h3>
+        <p class="produto-desc">Painéis decorativos clássicos que conferem requinte e personalidade a qualquer ambiente. Perfeitos para criar ambientes únicos e sofisticados.</p>
+        <span class="produto-tag">Painéis decorativos</span>
+      </div>
+
+    </div>
+
+    <!-- Banner Vitrine -->
+    <div class="vitrine-banner reveal">
+      <div class="vitrine-banner-text">
+        <span class="vitrine-banner-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          Vitrine online
+        </span>
+        <h3>Explore nosso catálogo<br>completo de produtos</h3>
+        <p>Navegue pela nossa vitrine e encontre o modelo ideal para o seu projeto. Rodaforros, rodapés e boiseries disponíveis para visualização — e peça pelo WhatsApp com facilidade.</p>
+      </div>
+      <a href="vitrine.html" class="vitrine-banner-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        Acessar vitrine
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PAPÉIS DE PAREDE ===== -->
+<section class="section" id="papeis-parede">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Desde 1980</span>
+      <h2 class="section-title">Papéis de parede <em>importados</em></h2>
+      <p class="section-desc">O produto que nos acompanha desde o início da empresa — uma ampla variedade de coleções internacionais para transformar qualquer ambiente com elegância e personalidade.</p>
+      <div class="ornament reveal">
+        <span></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="papeis-grid">
+      <div class="papeis-foto reveal">
+        <img src="images/papeis-1.jpg" alt="Coleções de papéis de parede importados — HomeHaus" loading="lazy">
+      </div>
+      <div class="papeis-foto reveal" style="transition-delay:.1s">
+        <img src="images/papeis-2.jpg" alt="Coleções de papéis de parede importados — Clarice Decor" loading="lazy">
+      </div>
+      <div class="papeis-foto reveal" style="transition-delay:.2s">
+        <img src="images/papeis-3.jpg" alt="Coleções de papéis de parede importados — Kanjitai" loading="lazy">
+      </div>
+    </div>
+
+    <div class="papeis-info-grid reveal">
+      <div class="papeis-texto">
+        <h3>Coleções exclusivas para cada estilo</h3>
+        <p>Trabalhamos com papéis de parede importados há mais de 46 anos, sendo este o produto que marcou o início da nossa história. Possuímos uma das mais amplas variedades de coleções de Porto Alegre, com opções para todos os estilos — do clássico ao contemporâneo, do infantil ao corporativo.</p>
+        <p>Atendemos projetos residenciais e comerciais, com assessoria personalizada para auxiliar na escolha da coleção ideal para cada ambiente.</p>
+        <span class="papeis-badge-encomenda">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          Sob encomenda
+        </span>
+      </div>
+      <div class="papeis-colecoes">
+        <h4>Marcas e coleções disponíveis</h4>
+        <ul>
+          <li>HomeHaus — Infinity, Seven, Office, Home, Casa Wallpaper, Cores e Cenários</li>
+          <li>Clarice Decor — Venice, Belize, Breeze, Costa Esmeralda, Zuma, Billund Kids</li>
+          <li>Kanjitai — Adi Tare, Criativo, Element, Poet Chan, Yoyo</li>
+          <li>E muitas outras coleções nacionais e importadas</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== COMO FUNCIONA ===== -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Simples assim</span>
+      <h2 class="section-title">Como <em>funciona</em></h2>
+      <p class="section-desc">Do primeiro contato até o produto em mãos — um processo simples, rápido e sem complicação.</p>
+      <div class="ornament reveal">
+        <span></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="como-funciona-grid">
+
+      <div class="passo reveal">
+        <div class="passo-circulo">
+          <span class="passo-num-badge">1</span>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <h3>Escolha o produto</h3>
+        <p>Navegue pelas nossas linhas de rodaforros, rodapés e boiseries. Se tiver dúvida, nossa equipe indica a melhor opção para o seu projeto.</p>
+      </div>
+
+      <div class="passo reveal" style="transition-delay:.12s">
+        <div class="passo-circulo">
+          <span class="passo-num-badge">2</span>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+          </svg>
+        </div>
+        <h3>Entre em contato</h3>
+        <p>Fale conosco pelo WhatsApp ou visite nossa loja na Av. Cristóvão Colombo, 1400. Tire suas dúvidas e informe as medidas do seu espaço.</p>
+      </div>
+
+      <div class="passo reveal" style="transition-delay:.24s">
+        <div class="passo-circulo">
+          <span class="passo-num-badge">3</span>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+          </svg>
+        </div>
+        <h3>Retire ou receba</h3>
+        <p>Retire na loja com agilidade ou combine a entrega. Produto separado, embalado com cuidado e pronto para transformar seu ambiente.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="section" id="galeria" style="padding:0 0 96px;">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nosso catálogo</span>
+      <h2 class="section-title">Variedade de <em>modelos e perfis</em></h2>
+      <p class="section-desc">Conheça algumas das linhas disponíveis em nossa loja para rodaforros, rodapés e boiseries.</p>
+    </div>
+    <div class="galeria-grid">
+      <div class="galeria-item reveal">
+        <img src="images/midia_1.jpg" alt="Catálogo de rodaforros e molduras Decosa disponíveis na Tânia Decorações">
+        <div class="galeria-overlay">
+          <span>Rodaforros &amp; Molduras</span>
+        </div>
+      </div>
+      <div class="galeria-item reveal" style="transition-delay:.12s">
+        <img src="images/midia_2.jpg" alt="Catálogo de boiseries e rodapés Decolux da Tânia Decorações LTDA">
+        <div class="galeria-overlay">
+          <span>Boiseries &amp; Rodapés</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIFERENCIAIS ===== -->
+<section id="diferenciais">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Por que nos escolher</span>
+      <h2 class="section-title">Nossos <em>diferenciais</em></h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.8)">Mais de quatro décadas dedicadas a levar o melhor em decoração de interiores para você.</p>
+    </div>
+
+    <div class="diferenciais-grid">
+      <div class="diferencial-card reveal">
+        <span class="diferencial-icon" aria-hidden="true">🏠</span>
+        <div class="diferencial-titulo">Empresa familiar</div>
+        <p class="diferencial-desc">Gestão familiar com dedicação e cuidado em cada atendimento desde 1980.</p>
+      </div>
+      <div class="diferencial-card reveal" style="transition-delay:.08s">
+        <span class="diferencial-icon" aria-hidden="true">⭐</span>
+        <div class="diferencial-titulo">46 anos de tradição</div>
+        <p class="diferencial-desc">Décadas de experiência no mercado gaúcho de decoração de interiores.</p>
+      </div>
+      <div class="diferencial-card reveal" style="transition-delay:.16s">
+        <span class="diferencial-icon" aria-hidden="true">✅</span>
+        <div class="diferencial-titulo">Qualidade garantida</div>
+        <p class="diferencial-desc">Produtos selecionados com rigoroso controle de qualidade e durabilidade.</p>
+      </div>
+      <div class="diferencial-card reveal" style="transition-delay:.24s">
+        <span class="diferencial-icon" aria-hidden="true">💬</span>
+        <div class="diferencial-titulo">Atendimento dedicado</div>
+        <p class="diferencial-desc">Equipe pronta para orientar e encontrar a solução ideal para seu projeto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Tire suas dúvidas</span>
+      <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+      <p class="section-desc">Reunimos as dúvidas mais comuns dos nossos clientes. Não encontrou o que procura? Fale conosco pelo WhatsApp.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>Quais produtos vocês comercializam?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Trabalhamos com três linhas principais: <strong>rodaforros</strong> (acabamento entre parede e teto), <strong>rodapés</strong> (acabamento entre parede e piso) e <strong>boiseries</strong> (painéis decorativos de parede). Cada linha conta com diferentes modelos, perfis e dimensões para se adaptar a qualquer estilo de decoração.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>Como faço para calcular a quantidade de produto necessária?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Basta medir o perímetro do cômodo (soma de todos os comprimentos das paredes). Nossa equipe pode ajudar nesse cálculo — basta nos informar as medidas pelo WhatsApp ou pessoalmente na loja. Recomendamos acrescentar uma margem de <strong>10% a 15%</strong> para compensar recortes e encaixes.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>Vocês fazem entrega dos produtos?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Sim! Trabalhamos com opção de entrega e também de retirada na loja. Para consultar condições, prazo e área de atendimento, entre em contato pelo WhatsApp <strong>(51) 98478-3430</strong> ou nos visite na Av. Cristóvão Colombo, 1400 — Floresta, Porto Alegre.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>A instalação é fácil? Preciso de um profissional?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Rodaforros e rodapés em isopor ou poliestireno são leves e de fácil aplicação com cola própria — muitos clientes instalam sem dificuldade. Já os boiseries e perfis maiores podem exigir mais atenção. Nossa equipe orienta sobre o processo de instalação no momento da compra e indica o tipo de cola mais adequado para cada situação.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>Posso visitar a loja para ver os produtos pessoalmente?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Claro! Nossa loja está aberta de <strong>segunda a sexta das 9h às 18h</strong> e <strong>sábados das 9h às 13h</strong>. Você pode ver e tocar nos produtos, conferir os modelos disponíveis e contar com a orientação da nossa equipe para escolher a melhor opção para o seu projeto.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta" role="button" tabindex="0" aria-expanded="false">
+          <h3>Os produtos estão disponíveis em diferentes cores e tamanhos?</h3>
+          <span class="faq-icone" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-resposta" role="region">
+          <div class="faq-resposta-inner">
+            Sim. Trabalhamos com uma ampla variedade de modelos, perfis e dimensões. A maioria dos produtos é vendida na cor branca e pode ser pintada conforme a preferência do cliente. Consulte nossa equipe para verificar a disponibilidade específica de cada linha.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="section" id="contato">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Entre em contato</span>
+      <h2 class="section-title">Fale com a <em>Tânia Decorações</em></h2>
+      <p class="section-desc">Estamos prontos para atender você e ajudar a transformar seu ambiente com elegância e qualidade.</p>
+    </div>
+
+    <div class="contato-grid">
+      <div class="contato-info reveal">
+
+        <div class="contato-card">
+          <div class="contato-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .96h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contato-card-titulo">Telefone / WhatsApp</div>
+            <div class="contato-card-valor">
+              <a href="https://wa.me/5551984783430" target="_blank" rel="noopener">(51) 98478-3430</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <div class="contato-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contato-card-titulo">E-mail</div>
+            <div class="contato-card-valor">
+              <a href="mailto:taniadecfinanceiro@gmail.com">taniadecfinanceiro@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <div class="contato-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contato-card-titulo">Endereço</div>
+            <div class="contato-card-valor">Av. Cristóvão Colombo, 1400<br>Floresta, Porto Alegre - RS</div>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <div class="contato-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="contato-card-titulo">Horário de funcionamento</div>
+            <div class="contato-card-valor">Segunda a sexta: 9h às 18h<br>Sábado: 9h às 13h</div>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <div class="contato-card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div>
+            <div class="contato-card-titulo">Instagram</div>
+            <div class="contato-card-valor">
+              <a href="https://www.instagram.com/taniadecoracoes_" target="_blank" rel="noopener">@taniadecoracoes_</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contato-mapa reveal" style="transition-delay:.15s">
+        <iframe
+          src="https://maps.google.com/maps?q=Avenida+Cristóvão+Colombo,+1400,+Floresta,+Porto+Alegre,+RS&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Tânia Decorações">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Logo Tânia Decorações">
+        </div>
+        <p class="footer-desc">Empresa familiar especialista em rodaforros, rodapés e boiseries. Qualidade e elegância na decoração de interiores desde 1980.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/taniadecoracoes_" target="_blank" rel="noopener" aria-label="Instagram da Tânia Decorações">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5551984783430" target="_blank" rel="noopener" aria-label="WhatsApp da Tânia Decorações">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Produtos</h3>
+        <ul>
+          <li><a href="#produtos">Rodaforros</a></li>
+          <li><a href="#produtos">Rodapés</a></li>
+          <li><a href="#produtos">Boiseries</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Tânia Decorações LTDA · CNPJ 87.056.313/0001-40</span>
+      <span>Porto Alegre - RS</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Rodapé MonteSite - Atualização Automática -->
+<div id="montesite-footer-badge"></div>
+<script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
+
+<!-- ===== WHATSAPP FLUTUANTE ===== -->
+<a id="wpp-float"
+   href="https://wa.me/5551984783430"
+   target="_blank"
+   rel="noopener"
+   aria-label="Fale conosco pelo WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  /* ── Barra de progresso ── */
+  const progressBar = document.getElementById('progress-bar');
+  function atualizarProgress() {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (window.scrollY / total * 100) + '%';
+  }
+
+  /* ── Header scroll ── */
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+    atualizarProgress();
+  }, { passive: true });
+
+  /* ── Menu mobile ── */
+  const toggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  let menuAberto = false;
+  toggle.addEventListener('click', () => {
+    menuAberto = !menuAberto;
+    navMobile.style.display = menuAberto ? 'flex' : 'none';
+    toggle.setAttribute('aria-expanded', menuAberto);
+  });
+  function fecharMenu() {
+    menuAberto = false;
+    navMobile.style.display = 'none';
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  /* ── Partículas hero ── */
+  (function() {
+    const container = document.getElementById('heroParticles');
+    if (!container) return;
+    const N = 18;
+    for (let i = 0; i < N; i++) {
+      const p = document.createElement('div');
+      p.className = 'ptc';
+      const size = Math.random() * 8 + 4;
+      const dur  = Math.random() * 8 + 6;
+      const del  = Math.random() * 10;
+      p.style.cssText = `
+        width:${size}px; height:${size}px;
+        left:${Math.random()*100}%;
+        bottom:${Math.random()*30}%;
+        animation-duration:${dur}s;
+        animation-delay:${del}s;
+      `;
+      container.appendChild(p);
+    }
+  })();
+
+  /* ── Reveal + contador + ornament ── */
+  const contadoresFeitos = new Set();
+
+  function animarContador(el) {
+    if (contadoresFeitos.has(el)) return;
+    contadoresFeitos.add(el);
+    const target = parseInt(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const dur = target > 100 ? 1800 : 900;
+    const start = performance.now();
+    const startVal = target > 100 ? Math.floor(target * 0.6) : 0;
+    function tick(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(startVal + (target - startVal) * ease) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = target + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('visivel');
+      /* contador */
+      if (e.target.dataset.target) animarContador(e.target);
+      /* contadores dentro do elemento */
+      e.target.querySelectorAll('[data-target]').forEach(animarContador);
+      observer.unobserve(e.target);
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* observar contadores que não são .reveal */
+  document.querySelectorAll('[data-target]:not(.reveal)').forEach(el => {
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { animarContador(el); obs.disconnect(); }
+    }, { threshold: 0.5 });
+    obs.observe(el);
+  });
+
+  /* ── Nav ativo no scroll ── */
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const secoes = [...navLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('nav-ativo'));
+        const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+        if (link) link.classList.add('nav-ativo');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  secoes.forEach(s => navObserver.observe(s));
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-pergunta').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const resposta = item.querySelector('.faq-resposta');
+      const inner = item.querySelector('.faq-resposta-inner');
+      const aberto = item.classList.contains('ativo');
+
+      document.querySelectorAll('.faq-item.ativo').forEach(i => {
+        i.classList.remove('ativo');
+        i.querySelector('.faq-resposta').style.maxHeight = '0';
+        i.querySelector('.faq-pergunta').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!aberto) {
+        item.classList.add('ativo');
+        resposta.style.maxHeight = inner.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    btn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+    });
+  });
+</script>
+</body>
+</html>
